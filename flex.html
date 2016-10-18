@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Flex</title>
+		<style type="text/css">
+			h3					{ margin: 5px 0; color: #493965; text-transform: uppercase; }
+			.flex-container 	{ margin: 30px 0; display: flex; display: -webkit-flex; border: 1px solid #000; width: 600px; height: 150px; }
+			.item				{ font-size: 40px; text-align: center; color: #fff; width: 60px; }
+
+			.item:nth-of-type(1) { background-color: #95295B; flex: 1 0 40px; -webkit-flex: 1 0 40px; }
+			.item:nth-of-type(2) { background-color: #BBAA40; flex: 0 1 50px; -webkit-flex: 0 1 50px;}
+			.item:nth-of-type(3) { background-color: #984B97; flex: 2; -webkit-flex: 2; }
+			.item:nth-of-type(4) { background-color: #2D7324; }
+			.item:nth-of-type(5) { background-color: #596063; }
+		</style>
+	</head>
+	<body>
+		<h3>Flex</h3>
+		<div class="flex-container">
+	    	<div class="item">1</div>
+	        <div class="item">2</div>
+	        <div class="item">3</div>
+	        <div class="item">4</div>
+	        <div class="item">5</div>
+	    </div>
+	</body>
+</html>

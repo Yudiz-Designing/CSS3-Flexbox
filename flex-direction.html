@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta charset="UTF-8">
+		<title>Flex Direction</title>
+		 <style>
+	    	h3					{ margin: 5px 0; color: #493965; text-transform: uppercase; }
+			.flex-container 	{ margin: 30px 0; display: flex; display: -webkit-flex; border: 1px solid #000; }
+			
+			.flex-row			{ flex-direction: row; -webkit-flex-direction: row; }
+			.flex-row-reverse	{ flex-direction: row-reverse; -webkit-flex-direction: row-reverse;}
+			.flex-column		{ flex-direction: column; -webkit-flex-direction: column; }
+			.flex-column-reverse{ flex-direction: column-reverse; -webkit-flex-direction: column-reverse;}
+			
+			
+			.item				{ font-size: 40px; text-align: center; color: #fff; width: 200px; }
+			
+			
+			.item:nth-of-type(1) { background-color: #95295B; }
+			.item:nth-of-type(2) { background-color: #BBAA40; }
+			.item:nth-of-type(3) { background-color: #984B97;}
+	    </style>
+	</head>
+	<body>
+		<h3>Row</h3>
+		<div class="flex-container flex-row">
+	    	<div class="item">1</div>
+	        <div class="item">2</div>
+	        <div class="item">3</div>
+	    </div>
+	    <h3>Row-Reverse</h3>
+	    <div class="flex-container flex-row-reverse">
+	    	<div class="item">1</div>
+	        <div class="item">2</div>
+	        <div class="item">3</div>
+	    </div>
+	    <h3>Column</h3>
+	    <div class="flex-container flex-column">
+	    	<div class="item">1</div>
+	        <div class="item">2</div>
+	        <div class="item">3</div>
+	    </div> 
+	    <h3>Column-Reverse</h3>
+	    <div class="flex-container flex-column-reverse">
+	    	<div class="item">1</div>
+	        <div class="item">2</div>
+	        <div class="item">3</div>
+	    </div>
+	</body>
+</html>

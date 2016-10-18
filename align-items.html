@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Flex Container - Align Items</title>
+		<style type="text/css">
+			h3					{ margin: 5px 0; color: #493965; text-transform: uppercase; }
+			.flex-container 	{ margin: 30px 0; display: flex; display: -webkit-flex; border: 1px solid #000; width: 800px; height: 100px; }
+			
+			.flex-start			{ align-items: flex-start; -webkit-align-items: flex-start; }
+			.flex-end			{ align-items: flex-end; -webkit-align-items: flex-end; }
+			.center				{ align-items: center; -webkit-align-items: center; }
+			.baseline			{ align-items: baseline; -webkit-align-items: baseline; }
+			
+			.space-around		{ justify-content: space-around; -webkit-justify-content: space-around; }
+			.space-between		{ justify-content: space-between; -webkit-justify-content: space-between; }
+			
+			.item				{ font-size: 40px; text-align: center; color: #fff; width: 200px; }
+			
+			
+			.item:nth-of-type(1) { background-color: #95295B; font-size: 50px; line-height: 60px; }
+			.item:nth-of-type(2) { background-color: #BBAA40; }
+			.item:nth-of-type(3) { background-color: #984B97; }
+			.item:nth-of-type(4) { background-color: #2D7324; }
+			.item:nth-of-type(5) { background-color: #596063; }
+			.item:nth-of-type(6) { background-color: #662A7B; }
+		</style>
+	</head>
+	<body>
+		<h3>Flex Start</h3>
+		<div class="flex-container flex-start">
+	    	<div class="item">1</div>
+	        <div class="item">2</div>
+	        <div class="item">3</div>
+	    </div>
+	    <h3>Flex End</h3>
+	    <div class="flex-container flex-end">
+	    	<div class="item">1</div>
+	        <div class="item">2</div>
+	        <div class="item">3</div>
+	    </div>
+	    <h3>Center</h3>
+	    <div class="flex-container center">
+	    	<div class="item">1</div>
+	        <div class="item">2</div>
+	        <div class="item">3</div>
+	    </div>
+	    <h3>Baseline</h3>
+	    <div class="flex-container baseline">
+	    	<div class="item">1</div>
+	        <div class="item">2</div>
+	        <div class="item">3</div>
+	    </div>
+	</body>
+</html>
